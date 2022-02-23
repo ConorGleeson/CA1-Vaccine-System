@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox stylesheets="@Stylesheet.css" alignment="TOP_CENTER" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ca1.VaccineRecordController">
+   <children>
+      <Label contentDisplay="CENTER" text="Vaccine Records">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label text="Please Select a Patient to see Their Records" />
+      <ChoiceBox fx:id="patients" prefWidth="150.0" />
+      <Button fx:id="appointments" mnemonicParsing="false" onAction="#switchToAppointments" text="Appointments" />
+      <Button fx:id="patientView" onAction="#switchToPatients" mnemonicParsing="false" text="Patients" />
+      <Button fx:id="home" mnemonicParsing="false" onAction="#switchToHome" text="Home" />
+      <ListView fx:id="recordsList" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</VBox>

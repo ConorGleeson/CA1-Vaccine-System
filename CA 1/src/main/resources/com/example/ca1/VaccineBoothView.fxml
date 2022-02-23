@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="700.0" prefWidth="800.0" stylesheets="@Stylesheet.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ca1.VaccineBoothController">
+    <children>
+        <Label text="Vaccine Booth ">
+            <font>
+                <Font size="29.0" />
+            </font>
+        </Label>
+        <Label text="Choose a Vaccine center" />
+        <ChoiceBox fx:id="centreList" prefWidth="150.0" />
+        <Label text="Booth Details">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label text="Identifier" />
+        <TextField fx:id="identifier" promptText="Pleases Enter the Identifier e.g. A1" />
+        <Label text="Floor Level" />
+        <TextField fx:id="floorLevel" promptText="Please enter the floor level e.g. 1" />
+        <Label  text="Wheelchair Accessibility" />
+      <ChoiceBox fx:id="wheelChair" prefWidth="150.0" />
+        <Button fx:id="add" mnemonicParsing="false" onAction="#addBooth" text="Add New Booth" />
+        <Button fx:id="delete" mnemonicParsing="false" onAction="#delete" text="Delete Booth " />
+      <Button fx:id="appointments" mnemonicParsing="false" onAction="#switchToAppointments" text="Appointments " />
+        <Button fx:id="back" mnemonicParsing="false" onAction="#back" text="Back to Centres" />
+        <ListView fx:id="boothList" prefHeight="232.0" prefWidth="640.0" />
+    </children>
+</VBox>

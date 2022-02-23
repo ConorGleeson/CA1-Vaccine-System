@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700" prefWidth="800" stylesheets="@Stylesheet.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ca1.AppointmentController">
+    <children>
+        <Label text="Add Appointment ">
+            <font>
+                <Font size="28.0" />
+            </font>
+        </Label>
+        <Label text="Select Vaccine Centre" />
+        <ChoiceBox fx:id="centreList" prefWidth="150.0" />
+        <Label text="Select Patient" />
+        <ChoiceBox fx:id="patientList" prefWidth="150.0" />
+        <Label text="Select Booth " />
+        <ChoiceBox fx:id="boothList" prefWidth="150.0" />
+        <Label text="Appointment details " />
+      <Label text="Choose a Date" />
+      <DatePicker fx:id="date" />
+      <Label text="Please Choose a Time" />
+      <ChoiceBox fx:id="time" prefWidth="150.0" />
+      <Label text="Select a Vaccine Type " />
+      <ChoiceBox fx:id="vaccineType" prefWidth="150.0" />
+      <Label text="Enter the Vaccine Identifier " />
+      <TextField fx:id="vaccineIdentifier" promptText="e.g. XX1234 " />
+      <Label text="Enter Vaccinator Details " />
+      <TextField fx:id="vaccinatorDetails" />
+      <Button fx:id="add" mnemonicParsing="false" onAction="#add" text="Add" />
+      <Button fx:id="delete" mnemonicParsing="false" onAction="#delete" text="Delete " />
+      <Button fx:id="complete" mnemonicParsing="false" onAction="#completeAppointment" text="Complete Appointment " />
+      <Button fx:id="appointmentRecords" mnemonicParsing="false" onAction="#switchToRecords" text="View Appointment Records " />
+      <Button fx:id="smartSelect" onAction="#smartSelect" mnemonicParsing="false" text="Smart Select Booth" />
+      <Button fx:id="back" mnemonicParsing="false" onAction="#back" text="Back to Booths " />
+      <ListView fx:id="appointmentsList" prefHeight="149.0" prefWidth="600.0" />
+
+    </children>
+</VBox>

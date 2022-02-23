@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" stylesheets="@Stylesheet.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ca1.MainMenuController">
+    <children>
+        <Label text="Vaccine System">
+            <font>
+                <Font size="45.0" />
+            </font>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+        </Label>
+      <Button fx:id="refresh" mnemonicParsing="false" onAction="#refresh" text="Click to View All Appointments" />
+      <ListView fx:id="listOfAppointments" prefHeight="410.0" prefWidth="1000.0">
+         <VBox.margin>
+            <Insets bottom="15.0" />
+         </VBox.margin></ListView>
+      <TextField fx:id="search" onAction="#search" promptText="Search For Vaccines by Type or Batch ">
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin></TextField>
+      <ListView fx:id="searchList" prefHeight="476.0" prefWidth="1000.0">
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin></ListView>
+        <Button fx:id="vacCentre" mnemonicParsing="false" onAction="#switchToVaccineCentre" text="Vaccination Centre">
+            <VBox.margin>
+                <Insets bottom="10.0" />
+            </VBox.margin>
+        </Button>
+        <Button fx:id="patients" mnemonicParsing="false" onAction="#switchToPatients" text="Patients" />
+        <Button fx:id="close" mnemonicParsing="false" onMouseClicked="#exit" text="Close">
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </Button>
+      <Button fx:id="save" mnemonicParsing="false" onAction="#save" text="Save" />
+      <Button fx:id="load" mnemonicParsing="false" onAction="#load" text="Load" />
+        <Button fx:id="nuke" mnemonicParsing="false" onAction="#nuke" text="Nuke" textAlignment="CENTER">
+            <VBox.margin>
+                <Insets top="50.0" />
+            </VBox.margin>
+        </Button>
+      <Label prefHeight="37.0" prefWidth="301.0" text="Warning this button will remove all data from the system" />
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+    </children>
+</VBox>

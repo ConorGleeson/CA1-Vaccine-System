@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" stylesheets="@Stylesheet.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ca1.PatientController">
+    <children>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Add a New Patient" textAlignment="CENTER">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Text>
+        <Label text="PPS Number" />
+        <TextField fx:id="ppsNumber" promptText="Enter the PPS Number of the Patient e.g 1234567XX" />
+        <Label text="First Name " />
+        <TextField fx:id="firstName" promptText="Enter the first name of the Patient" />
+        <Label text="Last Name" />
+        <TextField fx:id="lastName" promptText="Enter the last name of the Patient" />
+        <Label text="Date of Birth" />
+      <DatePicker fx:id="date" />
+        <Label text="Phone Number" />
+        <TextField fx:id="number" promptText="Enter the phone number of the Patient" />
+        <Label text="Email" />
+        <TextField fx:id="email" promptText="Enter the email of the Patient e.g bruh@bruh.ie" />
+        <Label text="Wheelchair User" />
+      <ChoiceBox fx:id="wheelChair"  prefWidth="150.0">
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+      </ChoiceBox>
+        <Button fx:id="add" mnemonicParsing="false" onAction="#addNewPatient" text="Add New Patient" />
+        <Button fx:id="delete" mnemonicParsing="false" onAction="#delete" text="Delete Patient " />
+      <Button fx:id="patientRecords" mnemonicParsing="false" onAction="#switchToRecords" text="Patient Records" />
+      <Button fx:id="appointments" mnemonicParsing="false" onAction="#switchToAppointments" text="Appointments" />
+        <Button fx:id="back" mnemonicParsing="false" onAction="#back" text="Back to Main Menu" />
+        <ListView fx:id="patientsList" prefHeight="206.0" prefWidth="683.0" />
+    </children>
+</VBox>

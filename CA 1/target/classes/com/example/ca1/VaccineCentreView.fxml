@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="700" prefWidth="800.0" stylesheets="@Stylesheet.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ca1.VaccineCentreController">
+
+    <children>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Add a new Vaccine Center Here">
+            <font>
+                <Font size="27.0" />
+            </font>
+        </Text>
+        <Label text="Name" />
+        <TextField fx:id="name" prefWidth="150.0" promptText="Enter the name of the centre e.g Kilkenny" />
+        <Label text="Address" />
+        <TextField fx:id="address" prefWidth="150.0" promptText="Enter the address of the Centre " />
+        <Label text="Eircode" />
+        <TextField fx:id="eircode" prefWidth="150.0" promptText="Enter the Eircode of the Centre XXX XXXX" />
+        <Label text="Number of Parking Spots" />
+        <TextField fx:id="numParking" prefWidth="150.0" promptText="Enter the number of available parking spaces" />
+        <Button fx:id="add" mnemonicParsing="false" onAction="#confirm" text="Add New Center">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </Button>
+        <Button fx:id="delete" mnemonicParsing="false" onAction="#delete" text="Delete" />
+        <Button fx:id="booths" mnemonicParsing="false" onAction="#switchToBooths" text="Booths " />
+        <Button fx:id="back" mnemonicParsing="false" onAction="#back" text="Back to Main Menu" />
+        <ListView fx:id="centres" prefHeight="200.0" prefWidth="200.0" />
+    </children>
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+
+</VBox>

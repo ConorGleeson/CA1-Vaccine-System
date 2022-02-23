@@ -1,0 +1,225 @@
+<object-stream>
+  <com.example.ca1.MyLinkedListAPI>
+    <vaccineCentreList>
+      <head>
+        <next>
+          <contents class="com.example.ca1.VaccineCentre">
+            <name>Kilkenny </name>
+            <address>Dublin Road</address>
+            <eircode>R95 YW31</eircode>
+            <numParking>500</numParking>
+            <vaccineBoothsList>
+              <head>
+                <next>
+                  <next>
+                    <contents class="com.example.ca1.VaccineBooth">
+                      <identifier>K1</identifier>
+                      <floorLevel>1</floorLevel>
+                      <wheelchairAccessible>Yes</wheelchairAccessible>
+                      <centreName>Kilkenny </centreName>
+                      <appointmentsList>
+                        <head>
+                          <contents class="com.example.ca1.Appointment">
+                            <boothIdentifier>K1</boothIdentifier>
+                            <date>2021-11-22</date>
+                            <time>11.00 </time>
+                            <vaccineType>Johnson &amp; Johnson </vaccineType>
+                            <vaccineIdentifier>JJ1234</vaccineIdentifier>
+                            <vaccinatorDetails>John</vaccinatorDetails>
+                            <patientPPSN>1234567PP</patientPPSN>
+                            <recordList/>
+                          </contents>
+                        </head>
+                      </appointmentsList>
+                    </contents>
+                  </next>
+                  <contents class="com.example.ca1.VaccineBooth">
+                    <identifier>K2</identifier>
+                    <floorLevel>1</floorLevel>
+                    <wheelchairAccessible>No</wheelchairAccessible>
+                    <centreName>Kilkenny </centreName>
+                    <appointmentsList/>
+                  </contents>
+                </next>
+                <contents class="com.example.ca1.VaccineBooth">
+                  <identifier>K3</identifier>
+                  <floorLevel>2</floorLevel>
+                  <wheelchairAccessible>No</wheelchairAccessible>
+                  <centreName>Kilkenny </centreName>
+                  <appointmentsList/>
+                </contents>
+              </head>
+            </vaccineBoothsList>
+          </contents>
+        </next>
+        <contents class="com.example.ca1.VaccineCentre">
+          <name>Waterford</name>
+          <address>Carriganore</address>
+          <eircode>X91 K236</eircode>
+          <numParking>100</numParking>
+          <vaccineBoothsList>
+            <head>
+              <next>
+                <next>
+                  <contents class="com.example.ca1.VaccineBooth">
+                    <identifier>W1</identifier>
+                    <floorLevel>2</floorLevel>
+                    <wheelchairAccessible>No</wheelchairAccessible>
+                    <centreName>Waterford</centreName>
+                    <appointmentsList/>
+                  </contents>
+                </next>
+                <contents class="com.example.ca1.VaccineBooth">
+                  <identifier>W2</identifier>
+                  <floorLevel>2</floorLevel>
+                  <wheelchairAccessible>No</wheelchairAccessible>
+                  <centreName>Waterford</centreName>
+                  <appointmentsList>
+                    <head>
+                      <contents class="com.example.ca1.Appointment">
+                        <boothIdentifier>W2</boothIdentifier>
+                        <date>2021-06-11</date>
+                        <time>11.00 </time>
+                        <vaccineType>Pfizer </vaccineType>
+                        <vaccineIdentifier>PF1234</vaccineIdentifier>
+                        <vaccinatorDetails>Joe </vaccinatorDetails>
+                        <patientPPSN>7654321CF</patientPPSN>
+                        <recordList/>
+                      </contents>
+                    </head>
+                  </appointmentsList>
+                </contents>
+              </next>
+              <contents class="com.example.ca1.VaccineBooth">
+                <identifier>W3</identifier>
+                <floorLevel>1</floorLevel>
+                <wheelchairAccessible>Yes</wheelchairAccessible>
+                <centreName>Waterford</centreName>
+                <appointmentsList>
+                  <head>
+                    <next>
+                      <next>
+                        <next>
+                          <contents class="com.example.ca1.Appointment">
+                            <boothIdentifier>W3</boothIdentifier>
+                            <date>2021-06-14</date>
+                            <time>13.00 </time>
+                            <vaccineType>AstraZeneca </vaccineType>
+                            <vaccineIdentifier>AZ4567</vaccineIdentifier>
+                            <vaccinatorDetails>Bill </vaccinatorDetails>
+                            <patientPPSN>5698741AK</patientPPSN>
+                            <recordList/>
+                          </contents>
+                        </next>
+                        <contents class="com.example.ca1.Appointment">
+                          <boothIdentifier>W3</boothIdentifier>
+                          <date>2021-12-24</date>
+                          <time>13.00 </time>
+                          <vaccineType>AstraZeneca </vaccineType>
+                          <vaccineIdentifier>AZ7885</vaccineIdentifier>
+                          <vaccinatorDetails>Bill </vaccinatorDetails>
+                          <patientPPSN>5698741AK</patientPPSN>
+                          <recordList/>
+                        </contents>
+                      </next>
+                      <contents class="com.example.ca1.Appointment">
+                        <boothIdentifier>W2</boothIdentifier>
+                        <date>2021-12-16</date>
+                        <time>14.00 </time>
+                        <vaccineType>Moderna </vaccineType>
+                        <vaccineIdentifier>MD5687</vaccineIdentifier>
+                        <vaccinatorDetails>Bob</vaccinatorDetails>
+                        <patientPPSN>6541237JD</patientPPSN>
+                        <recordList/>
+                      </contents>
+                    </next>
+                    <contents class="com.example.ca1.Appointment">
+                      <boothIdentifier>W1</boothIdentifier>
+                      <date>2021-12-16</date>
+                      <time>14.00 </time>
+                      <vaccineType>Moderna </vaccineType>
+                      <vaccineIdentifier>MD5687</vaccineIdentifier>
+                      <vaccinatorDetails>Bob</vaccinatorDetails>
+                      <patientPPSN>6541237JD</patientPPSN>
+                      <recordList/>
+                    </contents>
+                  </head>
+                </appointmentsList>
+              </contents>
+            </head>
+          </vaccineBoothsList>
+        </contents>
+      </head>
+    </vaccineCentreList>
+    <patientsList>
+      <head>
+        <next>
+          <next>
+            <next>
+              <contents class="com.example.ca1.Patient">
+                <ppsNumber>1234567PP</ppsNumber>
+                <firstName>Conor </firstName>
+                <lastName>Gleeson</lastName>
+                <dateOfBirth>2001-10-30</dateOfBirth>
+                <phone>0867368884</phone>
+                <email>conor@gleeson.ie</email>
+                <wheelchairUser>No</wheelchairUser>
+                <recordList/>
+              </contents>
+            </next>
+            <contents class="com.example.ca1.Patient">
+              <ppsNumber>7654321CF</ppsNumber>
+              <firstName>Cian</firstName>
+              <lastName>Farrell</lastName>
+              <dateOfBirth>2002-03-18</dateOfBirth>
+              <phone>08876975554</phone>
+              <email>cian@farrell.ie</email>
+              <wheelchairUser>No</wheelchairUser>
+              <recordList>
+                <head>
+                  <contents class="com.example.ca1.VaccineRecord">
+                    <date>2021-11-28</date>
+                    <type>PF4321</type>
+                    <batch>Pfizer </batch>
+                    <vaccinator>Joe </vaccinator>
+                    <patientPPS>7654321CF</patientPPS>
+                  </contents>
+                </head>
+              </recordList>
+            </contents>
+          </next>
+          <contents class="com.example.ca1.Patient">
+            <ppsNumber>6541237JD</ppsNumber>
+            <firstName>Jack</firstName>
+            <lastName>Donohoe</lastName>
+            <dateOfBirth>2002-01-01</dateOfBirth>
+            <phone>0854216874</phone>
+            <email>jack@dono.ie</email>
+            <wheelchairUser>No</wheelchairUser>
+            <recordList>
+              <head>
+                <contents class="com.example.ca1.VaccineRecord">
+                  <date>2021-06-15</date>
+                  <type>MD5687</type>
+                  <batch>Moderna </batch>
+                  <vaccinator>Bob</vaccinator>
+                  <patientPPS>6541237JD</patientPPS>
+                </contents>
+              </head>
+            </recordList>
+          </contents>
+        </next>
+        <contents class="com.example.ca1.Patient">
+          <ppsNumber>5698741AK</ppsNumber>
+          <firstName>Ant</firstName>
+          <lastName>O&apos;Keeffe</lastName>
+          <dateOfBirth>2002-01-21</dateOfBirth>
+          <phone>0863214457</phone>
+          <email>rigga@tony.ie</email>
+          <wheelchairUser>Yes</wheelchairUser>
+          <recordList/>
+        </contents>
+      </head>
+    </patientsList>
+  </com.example.ca1.MyLinkedListAPI>
+</object-stream>
